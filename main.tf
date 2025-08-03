@@ -2,7 +2,7 @@ module "vpc" {
   source = "./tf-roboshop-practice"
 
   for_each = var.vpc
-  cidr     = var.cidr
+  cidr     = each.value["cidr"]
   subnets  = var.subnets
 
 }
