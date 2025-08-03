@@ -1,12 +1,9 @@
 default_vpc_id             = "vpc-0e8376737193c7c92"
 default_vpc_cidr           = "172.31.0.0/16"
 
-
-az = ["us-east-1a", "us-east-1b"]
-
 vpc = {
   main = {
-    cidr                       = "10.0.0.0/16"
+    cidr = "10.0.0.0/16"
     subnets = {
       public = {
         public1 = { cidr = "10.0.0.0/24", az = "us-east-1a" }
