@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "/roboshop_terraform_practice/tf-roboshop-practice"
+  source = "./tf-roboshop-practice"
 
   for_each = var.vpc
   cidr     = each.value["cidr"]
